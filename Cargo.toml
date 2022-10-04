@@ -1,0 +1,16 @@
+[package]
+name = "rfix"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.rust-analyzer]
+rustc_private=true
+
+[dependencies]
+log = "0.4"
+env_logger = "0.8.4"
+clap = { version = "3.0", features = ["derive"] }
+
+[[bin]]
+name = "ast-mutate"
+path = "ast-mutate/main.rs"
